@@ -1,0 +1,213 @@
+body {
+  background: #333;
+}
+.slot-machine {
+  position: relative;
+  width: 420px;
+  margin: auto;
+  font-family: monospace;
+  padding: 0% 3% 10% 3%;
+  background-color: firebrick;
+  border-top-left-radius: 100px;
+  border-top-right-radius: 100px;
+  font-family: "Avant Garde",Avantgarde,"Century Gothic",CenturyGothic,AppleGothic,sans-serif;
+  border: 5px solid gold;
+  border-bottom: 0px;
+}
+.containers {
+  display: flex;
+  background-color: #f0f0f0;
+}
+.roof{
+  -webkit-clip-path: circle(57.7% at 50% 100%);
+  clip-path: circle(57.7% at 50% 100%);
+  height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f0f0f0;
+}
+.roof span{
+  font-size: 40px;
+  margin-bottom: 4px; 
+}
+.roof div{
+  background-color: #f0f0f0;
+  width: 100px;
+  height: 100px;
+  margin-top: 100px;
+  border-radius: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: inset 0 0 16px 0px black;
+}
+.container {
+  height: 170px;
+  width: 100%;
+  background: #f0f0f0;
+  font-size: 65px;
+  text-align: center;
+  padding-top: 30px;
+  box-sizing: border-box;
+  box-shadow: inset 0 0 9px black;
+  border-top: 10px solid gold;
+  border-bottom: 10px solid gold;
+  border-radius: 50px;
+  margin: 0px 10px;
+}
+
+.values {
+  font-weight: bold;
+  text-transform: uppercase;
+  display: flex;
+  position: relative;
+  top: 50px;
+  
+}
+.credits {
+  background-color: #f0f0f0;
+  color: #333;
+  width: 33.3333333333%;
+  padding: 10px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+}
+.total-bet {
+  width: 33.3333333333%;
+  text-align: right;
+  color: #fff;
+  padding: 10px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  background-color: #666;
+}
+.winnings {
+  width: 33.3333333333%;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  padding: 10px;
+  border-bottom-right-radius: 20px;
+  border-top-right-radius: 20px;
+  background-color: #f0f0f0;
+}
+.lever {
+  height: 100%;
+  position: absolute;
+  right: -10px;
+  top: 0;
+}
+.lever .track {
+  height: 100px;
+  width: 25px;
+  background: #666;
+  border-radius: 5px;
+  margin-top: 310px;
+  border-radius: 0;
+  margin-right: -20px;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+.lever .handle {
+  width: 15px;
+  height: 15%;
+  background: brown;
+  border-radius: 5px;
+  position: absolute;
+  top: 50%;
+  left: 4px;
+  transform-origin: 0 0;
+  transform: rotateX(180deg) skewX(8deg);
+  transition: all 0.2s ease-in-out;
+  cursor: drag;
+}
+.handle:hover{
+  cursor: pointer;
+}
+.lever .handle:after {
+  content: "";
+  display: block;
+  positioN: absolute;
+  top: 100%;
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  background: gold;
+  transform: translateY(-50%) translateX(-25%);
+}
+.lever .handle.playing {
+  transform: rotate(0deg) skewX(8deg);
+}
+.controls {
+  text-transform: uppercase;
+  font-weight: bold;
+  line-height: 2;
+  text-align: center;
+}
+.controls button{
+  line-height: 2;
+}
+.controls .text{
+  margin-right: 20px;
+  margin-left: 20px;
+
+}
+.controls .total-bet {
+  display: inline;
+  text-align: center;
+  padding: 5px 10px 9px 10px;
+  margin: 0px 10px 0px 6px;
+}
+.footer{
+  background-color: #f0f0f0;
+  height: 50px;
+  width: 620px;
+  position: absolute;
+  bottom: 0;
+  left: -55px;
+  display: flex;
+  align-items: center;
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+  border: 5px solid gold;
+  border-top: 0px;
+}
+.middle{
+  background-color: #f0f0f0;
+  width: 100%;
+  height: 70px;
+  border-bottom-right-radius: 100px;
+  border-bottom-left-radius: 100px;
+}
+.combinations{
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin: 50px;
+  color: #f0f0f0;
+  text-align: center;
+}
+table th{
+  padding: 10px;
+  border: 1px solid;
+}
+table td{
+  padding: 5px;
+}
+table{
+  border: 1px solid #f0f0f0;
+  border-collapse: collapse;
+}
+.winner{
+  background-color: lawngreen;
+  box-shadow: 0 0 20px lawngreen;
+}
+.loser{
+  background-color: red;
+  box-shadow: 0 0 20px red;
+}

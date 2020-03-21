@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="main.css">
+</head>
+
+<body>
+  <div class="slot-machine">
+    <div class="roof">
+      <div>
+        <span>⭐</span>
+      </div>
+    </div>
+    <div class="containers">
+      <div class="container container-1">🍒</div>
+      <div class="container container-2">🍉</div>
+      <div class="container container-3">💯</div>
+    </div>
+    <div class="middle"></div>
+
+
+    <div class="values">
+      <div class="credits">
+        Credits : <span class="value">0</span>
+      </div>
+      <div class="total-bet">
+        Bet : <span class="value">0</span>
+      </div>
+      <div class="winnings">
+        Winnings : <span class="value">0</span>
+      </div>
+    </div>
+
+    <div class="lever">
+      <div class="track"></div>
+      <div class="handle"></div>
+    </div>
+
+    <div class="footer">
+      <div class="controls">
+        <span class="text">Change Bet</span>
+        <button class="decrease-bet">➖</button>
+        <div class="total-bet">
+          <span class="value">0</span>
+        </div>
+        <button class="increase-bet">➕</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="combinations">
+    <table class="pure-table">
+      <thead>
+        <tr>
+          <th>Combinations</th>
+          <th>Points</th>
+        </tr>
+      </thead>
+
+      <tbody>
+        <tr>
+          <td>7️⃣ + 7️⃣ + 🍒</td>
+          <td>5</td>
+        </tr>
+        <tr>
+          <td>🍉 + 🍉 + 🍒</td>
+          <td>5</td>
+        </tr>
+        <tr>
+          <td>💯 + 💯 + 🍒</td>
+          <td>5</td>
+        </tr>
+        <tr>
+          <td>🍒 + 🍒 + 🍒</td>
+          <td>10</td>
+        </tr>
+        <tr>
+          <td>7️⃣ + 7️⃣ + 7️⃣</td>
+          <td>30</td>
+        </tr>
+        <tr>
+          <td>💯 + 💯 + 💯</td>
+          <td>100</td>
+        </tr> 
+      </tbody>
+    </table>
+  </div>
+
+  <script type="text/javascript" src="javascript.js"></script>
+</body>
+
+</html>
